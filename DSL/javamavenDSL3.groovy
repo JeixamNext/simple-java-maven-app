@@ -1,7 +1,7 @@
 job('Java Maven App DSL 3') {
     description('Java Maven App con DSL para el curso de Jenkins')
     scm {
-        git('git@github.com:JeixamNext/simple-java-maven-app.git', 'master') { node ->
+        git('https://github.com/JeixamNext/simple-java-maven-app.git', 'master') { node ->
             node / gitConfigName('example')
             node / gitConfigEmail('xample@gmail.com')
         }
@@ -49,7 +49,7 @@ job('Java Maven App DSL 3') {
 job('Job test Hola Mundo') {
 	description('Aplicacion Hola Mundo de Prueba')
 	scm {
-		git('git@github.com:JeixamNext/simple-java-maven-app.git', 'master') { node ->
+		git('https://github.com/JeixamNext/simple-java-maven-app.git', 'master') { node ->
 		    node / gitConfigName('jeixam')
 		    node / gitConfigEmail('xample@gmail.com')
 		}
